@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\bin\Debug\net8.0\MovieReservationApp.Core.deps.json
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\bin\Debug\net8.0\MovieReservationApp.Core.runtimeconfig.json
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\bin\Debug\net8.0\MovieReservationApp.Core.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\bin\Debug\net8.0\MovieReservationApp.Core.pdb
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\MovieReservationApp.Core.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\MovieReservationApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\MovieReservationApp.Core.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\MovieReservationApp.Core.AssemblyInfo.cs
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\MovieReservationApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\MovieReservationApp.Core.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\refint\MovieReservationApp.Core.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\MovieReservationApp.Core.pdb
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\MovieReservationApp.Core.genruntimeconfig.cache
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\ref\MovieReservationApp.Core.dll

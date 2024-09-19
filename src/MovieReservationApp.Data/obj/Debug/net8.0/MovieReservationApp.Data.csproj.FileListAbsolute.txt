@@ -1,0 +1,17 @@
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\bin\Debug\net8.0\MovieReservationApp.Data.deps.json
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\bin\Debug\net8.0\MovieReservationApp.Data.runtimeconfig.json
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\bin\Debug\net8.0\MovieReservationApp.Data.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\bin\Debug\net8.0\MovieReservationApp.Data.pdb
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\bin\Debug\net8.0\MovieReservationApp.Core.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\bin\Debug\net8.0\MovieReservationApp.Core.pdb
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\obj\Debug\net8.0\MovieReservationApp.Data.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\obj\Debug\net8.0\MovieReservationApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\obj\Debug\net8.0\MovieReservationApp.Data.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\obj\Debug\net8.0\MovieReservationApp.Data.AssemblyInfo.cs
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\obj\Debug\net8.0\MovieReservationApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\obj\Debug\net8.0\MovieRes.E635DC73.Up2Date
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\obj\Debug\net8.0\MovieReservationApp.Data.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\obj\Debug\net8.0\refint\MovieReservationApp.Data.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\obj\Debug\net8.0\MovieReservationApp.Data.pdb
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\obj\Debug\net8.0\MovieReservationApp.Data.genruntimeconfig.cache
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Data\obj\Debug\net8.0\ref\MovieReservationApp.Data.dll
