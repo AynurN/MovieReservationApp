@@ -13,7 +13,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieReservationApp.Business.Services.Implemenations
+namespace MovieReservationApp.Business.Services.Implementations
 {
     public class MovieService : IMovieService
     {

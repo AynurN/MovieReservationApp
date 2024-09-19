@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using MovieReservationApp.Business.Services.Implemenations;
+using MovieReservationApp.Business.Services.Implementations;
 using MovieReservationApp.Business.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -14,6 +14,7 @@ namespace MovieReservationApp.Business
         public static void AddServices(this IServiceCollection services)
         {
             services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<IAuthService, AuthService>();
         }
     }
 }

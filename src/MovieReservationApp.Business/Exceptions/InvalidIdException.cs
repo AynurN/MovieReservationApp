@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieReservationApp.Business.Exceptions
 {
-    internal class InvalidIdException : Exception
+    public class InvalidIdException : Exception
     {
         public InvalidIdException()
         {

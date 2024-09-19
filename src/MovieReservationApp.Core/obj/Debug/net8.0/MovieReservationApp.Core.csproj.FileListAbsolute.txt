@@ -12,3 +12,4 @@ C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Cor
 C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\MovieReservationApp.Core.pdb
 C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\MovieReservationApp.Core.genruntimeconfig.cache
 C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\ref\MovieReservationApp.Core.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\src\MovieReservationApp.Core\obj\Debug\net8.0\MovieReservationApp.Core.sourcelink.json

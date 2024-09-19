@@ -147,3 +147,5 @@ C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.AP
 C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.API\bin\Debug\net8.0\MovieReservationApp.Core.pdb
 C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.API\bin\Debug\net8.0\MovieReservationApp.Data.pdb
 C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.API\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.API\obj\Debug\net8.0\MovieReservationApp.API.sourcelink.json

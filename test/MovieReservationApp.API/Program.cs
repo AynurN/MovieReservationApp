@@ -4,6 +4,9 @@ using MovieReservationApp.Data.DAL;
 using MovieReservationApp.Data;
 using MovieReservationApp.Core.Entities;
 using MovieReservationApp.Business;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace MovieReservationApp.API
 {
@@ -36,6 +39,26 @@ namespace MovieReservationApp.API
             builder.Services.AddAutoMapper(opt =>
             {
                 opt.AddProfile<MapProfile>();
+            });
+
+            builder.Services.AddAuthentication(opt =>
+            {
+                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(opt =>
+            {
+                opt.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidIssuer = "https://localhost:7267/",
+                    ValidAudience = "https://localhost:7267/",
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("7537a543-a120-4843-80c9-28e454c0c351")),
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero
+
+                };
             });
             var app = builder.Build();
 
