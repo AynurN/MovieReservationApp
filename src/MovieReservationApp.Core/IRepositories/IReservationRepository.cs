@@ -5,9 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieReservationApp.Core.IRepositories
-{
-    public interface IReservationRepository :IGenericRepository<Reservation>
-    {
-    }
-}
+namespace MovieReservationApp.Core.IRepositories;
+
+public interface IReservationRepository :IGenericRepository<Reservation>
+{}

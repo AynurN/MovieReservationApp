@@ -67,6 +67,7 @@ namespace MovieReservationApp.Business.Services.Implementations
             if (movie == null) throw new EntityNotFoundException("Movie not found");
             return mapper.Map<MovieGetDto>(movie);
         }
+
             public async Task UpdateAsync(int id, MovieUpdateDto dTO)
             {
             if (id < 1) throw new InvalidIdException("Id is not valid");

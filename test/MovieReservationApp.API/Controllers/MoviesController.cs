@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.SqlServer.Server;
 using MovieReservationApp.Business.Dtos;
+using MovieReservationApp.Business.Dtos.TheaterDtos;
 using MovieReservationApp.Business.Exceptions;
+using MovieReservationApp.Business.Services.Implementations;
 using MovieReservationApp.Business.Services.Interfaces;
 
 namespace MovieReservationApp.API.Controllers
@@ -17,9 +19,10 @@ namespace MovieReservationApp.API.Controllers
         {
             this.movieService = movieService;
         }
-        [HttpGet]
 
-        public async Task<IActionResult> GetAll() {
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
             var data = await movieService.GetByExpessionAsync(true);
             return Ok(new ApiResponse<ICollection<MovieGetDto>>
             {
@@ -41,7 +44,7 @@ namespace MovieReservationApp.API.Controllers
             {
                 return BadRequest(new ApiResponse<MovieGetDto>
                 {
-                    StatusCode = StatusCodes.Status400BadRequest, //400
+                    StatusCode = StatusCodes.Status400BadRequest, 
                     ErrorMessage = "Id is invalid!",
                     Data = null
                 });

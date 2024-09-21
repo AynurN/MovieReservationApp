@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using MovieReservationApp.Business.Dtos.TokenDtos;
 using MovieReservationApp.Business.Dtos.UserDtos;
@@ -22,16 +23,16 @@ namespace MovieReservationApp.Business.Services.Implementations
         private readonly RoleManager<IdentityRole> roleManager;
         private readonly IMapper mapper;
         private readonly SignInManager<User> signInManager;
+        private readonly IConfiguration configuration;
 
-       
-
-        public AuthService(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, IMapper mapper, SignInManager<User> signInManager)
+        public AuthService(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, 
+            IMapper mapper, SignInManager<User> signInManager, IConfiguration configuration)
         {
             this.userManager = userManager;
             this.roleManager = roleManager;
             this.mapper = mapper;
             this.signInManager = signInManager;
-       
+            this.configuration = configuration;
         }
         public async Task<TokenResponseDto> Login(UserLoginDto dto)
         {
@@ -57,15 +58,15 @@ namespace MovieReservationApp.Business.Services.Implementations
                 .. roles.Select(role => new Claim(ClaimTypes.Role, role))
 
             ];
-            string key = "7537a543-a120-4843-80c9-28e454c0c351";
-            DateTime expire = DateTime.UtcNow.AddMinutes(10);
+            string key = configuration.GetSection("JWT:secretKey").Value;
+            DateTime expire = DateTime.UtcNow.AddMinutes(60);
             SymmetricSecurityKey symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
             SigningCredentials signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
             JwtSecurityToken jwtSecurityToken = new JwtSecurityToken(
                 signingCredentials: signingCredentials,
             claims: claims,
-                audience: "https://localhost:7267/",
-                issuer: "https://localhost:7267/",
+                audience: configuration.GetSection("JWT:audience").Value,
+                issuer: configuration.GetSection("JWT:issuer").Value,
                 expires: expire,
                 notBefore: DateTime.UtcNow
                 );
@@ -77,6 +78,7 @@ namespace MovieReservationApp.Business.Services.Implementations
         {
             User user = mapper.Map<User>(dto);
             var result = await userManager.CreateAsync(user, dto.Password);
+           await  userManager.AddToRoleAsync(user,"Member");
             if (!result.Succeeded)
             {
                 throw new UnsuccesfulOperationException("Register unsuccessfull!");

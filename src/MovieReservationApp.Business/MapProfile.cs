@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using MovieReservationApp.Business.Dtos;
+using MovieReservationApp.Business.Dtos.TheaterDtos;
+using MovieReservationApp.Business.Dtos.UserDtos;
 using MovieReservationApp.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,6 +18,12 @@ namespace MovieReservationApp.Business
             CreateMap<Movie, MovieCreateDto>().ReverseMap();
             CreateMap<Movie, MovieGetDto>().ReverseMap();
             CreateMap<Movie, MovieUpdateDto>().ReverseMap();
+
+            CreateMap<Theater, TheaterCreateDto>().ReverseMap();
+            CreateMap<Theater, TheaterGetDto>().ReverseMap();
+            CreateMap<Theater, TheaterUpdateDto>().ReverseMap();
+
+
         }
     }
 }

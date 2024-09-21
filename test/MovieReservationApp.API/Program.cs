@@ -7,6 +7,7 @@ using MovieReservationApp.Business;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.Extensions.Configuration;
 
 namespace MovieReservationApp.API
 {
@@ -52,9 +53,9 @@ namespace MovieReservationApp.API
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidIssuer = "https://localhost:7267/",
-                    ValidAudience = "https://localhost:7267/",
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("7537a543-a120-4843-80c9-28e454c0c351")),
+                    ValidIssuer = builder.Configuration.GetSection("JWT:issuer").Value,
+                    ValidAudience = builder.Configuration.GetSection("JWT:audience").Value,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetSection("JWT:secretKey").Value)),
                     ValidateLifetime = true,
                     ClockSkew = TimeSpan.Zero
 

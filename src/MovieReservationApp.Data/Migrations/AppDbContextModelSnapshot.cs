@@ -328,27 +328,16 @@ namespace MovieReservationApp.Data.Migrations
                     b.Property<DateTime>("ModifiedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("ReservationId")
+                    b.Property<int>("ReservationId")
                         .HasColumnType("int");
 
                     b.Property<string>("SeatNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ShowTimeId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ReservationId");
-
-                    b.HasIndex("ShowTimeId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("SeatReservations");
                 });
@@ -489,7 +478,7 @@ namespace MovieReservationApp.Data.Migrations
             modelBuilder.Entity("MovieReservationApp.Core.Entities.Reservation", b =>
                 {
                     b.HasOne("MovieReservationApp.Core.Entities.ShowTime", "ShowTime")
-                        .WithMany()
+                        .WithMany("Reservations")
                         .HasForeignKey("ShowTimeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -507,25 +496,13 @@ namespace MovieReservationApp.Data.Migrations
 
             modelBuilder.Entity("MovieReservationApp.Core.Entities.SeatReservation", b =>
                 {
-                    b.HasOne("MovieReservationApp.Core.Entities.Reservation", null)
+                    b.HasOne("MovieReservationApp.Core.Entities.Reservation", "Reservation")
                         .WithMany("SeatReservations")
-                        .HasForeignKey("ReservationId");
-
-                    b.HasOne("MovieReservationApp.Core.Entities.ShowTime", "ShowTime")
-                        .WithMany("SeatReservations")
-                        .HasForeignKey("ShowTimeId")
+                        .HasForeignKey("ReservationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MovieReservationApp.Core.Entities.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ShowTime");
-
-                    b.Navigation("User");
+                    b.Navigation("Reservation");
                 });
 
             modelBuilder.Entity("MovieReservationApp.Core.Entities.ShowTime", b =>
@@ -559,7 +536,7 @@ namespace MovieReservationApp.Data.Migrations
 
             modelBuilder.Entity("MovieReservationApp.Core.Entities.ShowTime", b =>
                 {
-                    b.Navigation("SeatReservations");
+                    b.Navigation("Reservations");
                 });
 
             modelBuilder.Entity("MovieReservationApp.Core.Entities.Theater", b =>

@@ -16,6 +16,6 @@ namespace MovieReservationApp.Core.Entities
         public Movie Movie { get; set; }
         public int TheaterId { get; set; }
         public Theater Theater { get; set; }
-        public ICollection<SeatReservation> SeatReservations { get; set; }
+        public ICollection<Reservation> Reservations { get; set; }
     }
 }
