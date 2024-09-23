@@ -8,8 +8,6 @@ namespace MovieReservationApp.Core.Entities
 {
     public class Reservation :BaseEntity
     {
-        public DateTime ReservationDate { get; set; }
-
         //relational
         public string UserId { get; set; }
         public User User { get; set; }

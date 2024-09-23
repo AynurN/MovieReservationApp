@@ -22,7 +22,7 @@ namespace MovieReservationApp.API.Controllers
 
         public async Task<IActionResult> GetAll()
         {
-            var data = await reservationService.GetByExpessionAsync(true);
+            var data = await reservationService.GetByExpessionAsync(true,null,"User","ShowTime");
             return Ok(new ApiResponse<ICollection<GetReservationDto>>
             {
                 StatusCode = StatusCodes.Status200OK,
@@ -37,13 +37,13 @@ namespace MovieReservationApp.API.Controllers
             GetReservationDto dto = null;
             try
             {
-                dto = await reservationService.GetByIdAsync(id);
+                dto = await reservationService.GetOneByExpressionAsync(true, null, "User", "ShowTime");
             }
             catch (InvalidIdException ex)
             {
                 return BadRequest(new ApiResponse<GetReservationDto>
                 {
-                    StatusCode = StatusCodes.Status400BadRequest, //400
+                    StatusCode = StatusCodes.Status400BadRequest,
                     ErrorMessage = "Id is invalid!",
                     Data = null
                 });
@@ -74,7 +74,7 @@ namespace MovieReservationApp.API.Controllers
             });
         }
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] CreateReservationDto dto)
+        public async Task<IActionResult> Create([FromBody] CreateReservationDto dto)
         {
             try
             {
@@ -99,7 +99,7 @@ namespace MovieReservationApp.API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update(int id, [FromForm] UpdateReservationDto dto)
+        public async Task<IActionResult> Update(int id, [FromBody] UpdateReservationDto dto)
         {
             try
             {

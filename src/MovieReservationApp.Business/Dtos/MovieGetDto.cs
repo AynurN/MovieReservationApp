@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace MovieReservationApp.Business.Dtos
 {
     public record MovieGetDto(int Id, string Title, DateTime CreatedAt, DateTime ModifiedAt, 
-        string Desc,int Duration, double Rating, DateTime ReleaseDate, ICollection<string> Genres, bool IsDeleted  );
+        string Desc,int Duration, double Rating, DateTime ReleaseDate, List<string>? Genres, bool IsDeleted  );
    
 }

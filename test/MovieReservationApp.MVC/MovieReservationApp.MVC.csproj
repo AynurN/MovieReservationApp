@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.5" />
+    <PackageReference Include="RestSharp" Version="112.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\documentation\.DS_Store" />
+    <None Include="wwwroot\assets\fonts\.DS_Store" />
+    <None Include="wwwroot\assets\fonts\Roboto\.DS_Store" />
+    <None Include="wwwroot\assets\images\.DS_Store" />
+    <None Include="wwwroot\assets\images\auth\.DS_Store" />
+    <None Include="wwwroot\assets\images\faces\.DS_Store" />
+    <None Include="wwwroot\assets\js\.DS_Store" />
+    <None Include="wwwroot\assets\pages\.DS_Store" />
+    <None Include="wwwroot\assets\pages\charts\.DS_Store" />
+    <None Include="wwwroot\assets\pages\forms\.DS_Store" />
+    <None Include="wwwroot\assets\pages\icons\.DS_Store" />
+    <None Include="wwwroot\assets\pages\samples\.DS_Store" />
+    <None Include="wwwroot\assets\pages\tables\.DS_Store" />
+    <None Include="wwwroot\assets\pages\ui-features\.DS_Store" />
+    <None Include="wwwroot\assets\vendors\.DS_Store" />
+  </ItemGroup>
+
+</Project>

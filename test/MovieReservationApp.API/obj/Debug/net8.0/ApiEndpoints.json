@@ -214,19 +214,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ReservationDate",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "UserId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "ShowTimeId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "dto",
+        "Type": "MovieReservationApp.Business.Dtos.ReservationDtos.CreateReservationDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -245,19 +235,9 @@
         "IsRequired": false
       },
       {
-        "Name": "ReservationDate",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "UserId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "ShowTimeId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "dto",
+        "Type": "MovieReservationApp.Business.Dtos.ReservationDtos.UpdateReservationDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -295,6 +275,105 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MovieReservationApp.API.Controllers.SeatReservationsController",
+    "Method": "GetAll",
+    "RelativePath": "api/SeatReservations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieReservationApp.API.Controllers.SeatReservationsController",
+    "Method": "Create",
+    "RelativePath": "api/SeatReservations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SeatNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsBooked",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "ReservationId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieReservationApp.API.Controllers.SeatReservationsController",
+    "Method": "Update",
+    "RelativePath": "api/SeatReservations",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SeatNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsBooked",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "ReservationId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieReservationApp.API.Controllers.SeatReservationsController",
+    "Method": "Delete",
+    "RelativePath": "api/SeatReservations",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MovieReservationApp.API.Controllers.SeatReservationsController",
+    "Method": "GetById",
+    "RelativePath": "api/SeatReservations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MovieReservationApp.API.Controllers.ShowTimesController",
     "Method": "GetAll",
     "RelativePath": "api/ShowTimes",
@@ -313,24 +392,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "StartTime",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "EndTime",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "MovieId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "TheaterId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "dto",
+        "Type": "MovieReservationApp.Business.Dtos.ShowTimeDtos.ShowTimeCreateDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -349,24 +413,9 @@
         "IsRequired": false
       },
       {
-        "Name": "StartTime",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "EndTime",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "MovieId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "TheaterId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "dto",
+        "Type": "MovieReservationApp.Business.Dtos.ShowTimeDtos.ShowTimeUpdateDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

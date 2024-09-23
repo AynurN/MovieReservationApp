@@ -248,7 +248,6 @@ namespace MovieReservationApp.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Genres")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
@@ -287,9 +286,6 @@ namespace MovieReservationApp.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime>("ModifiedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("ReservationDate")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("ShowTimeId")

@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1321E911-984
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{74FDF541-583F-4620-9184-2BC3E1F7208B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservationApp.Core", "src\MovieReservationApp.Core\MovieReservationApp.Core.csproj", "{7DC2BC2B-1814-4FF5-A389-314C4FC895EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieReservationApp.Core", "src\MovieReservationApp.Core\MovieReservationApp.Core.csproj", "{7DC2BC2B-1814-4FF5-A389-314C4FC895EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservationApp.Data", "src\MovieReservationApp.Data\MovieReservationApp.Data.csproj", "{57F75B12-9A34-4F7F-96EB-F44E899E46BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieReservationApp.Data", "src\MovieReservationApp.Data\MovieReservationApp.Data.csproj", "{57F75B12-9A34-4F7F-96EB-F44E899E46BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservationApp.Business", "src\MovieReservationApp.Business\MovieReservationApp.Business.csproj", "{DA7383BE-856B-4B60-82A5-02F490B727F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieReservationApp.Business", "src\MovieReservationApp.Business\MovieReservationApp.Business.csproj", "{DA7383BE-856B-4B60-82A5-02F490B727F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservationApp.API", "test\MovieReservationApp.API\MovieReservationApp.API.csproj", "{B905E13D-E03E-41D7-8B52-030C9E60BCF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieReservationApp.API", "test\MovieReservationApp.API\MovieReservationApp.API.csproj", "{B905E13D-E03E-41D7-8B52-030C9E60BCF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservationApp.MVC", "test\MovieReservationApp.MVC\MovieReservationApp.MVC.csproj", "{782AE865-975C-4A5C-AD2F-9467BC44ED71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{B905E13D-E03E-41D7-8B52-030C9E60BCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B905E13D-E03E-41D7-8B52-030C9E60BCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B905E13D-E03E-41D7-8B52-030C9E60BCF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{782AE865-975C-4A5C-AD2F-9467BC44ED71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782AE865-975C-4A5C-AD2F-9467BC44ED71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782AE865-975C-4A5C-AD2F-9467BC44ED71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782AE865-975C-4A5C-AD2F-9467BC44ED71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
