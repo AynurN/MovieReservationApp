@@ -1,4 +1,4 @@
-﻿using MovieReservationApp.MVC.Areas.ViewModels.UserVMs;
+﻿
 using MovieReservationApp.MVC.ViewModels.AuthVMs;
 
 namespace MovieReservationApp.MVC.Services.Intefaces

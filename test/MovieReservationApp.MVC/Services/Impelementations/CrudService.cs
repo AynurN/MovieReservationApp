@@ -30,10 +30,11 @@ namespace MovieReservationApp.MVC.Services.Impelementations
             request.AddJsonBody(entity);
 
             var response = await restClient.ExecuteAsync<ApiResponseMessage<T>>(request);
-            if (!response.IsSuccessful) throw new Exception();
+            if (!response.IsSuccessful) 
+                throw new Exception();
         }
-
-        public async Task Delete<T>(string endpoint, int id)
+		
+		public async Task Delete<T>(string endpoint, int id)
         {
             var request = new RestRequest(endpoint, Method.Delete);
 

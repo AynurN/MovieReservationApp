@@ -248,6 +248,7 @@ namespace MovieReservationApp.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Genres")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
@@ -351,6 +352,9 @@ namespace MovieReservationApp.Data.Migrations
 
                     b.Property<DateTime>("EndTime")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("FullSeats")
+                        .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");

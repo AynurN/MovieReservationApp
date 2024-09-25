@@ -225,3 +225,9 @@ C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.MV
 C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.MVC\obj\Debug\net8.0\MovieReservationApp.MVC.genruntimeconfig.cache
 C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.MVC\obj\Debug\net8.0\ref\MovieReservationApp.MVC.dll
 C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.MVC\bin\Debug\net8.0\RestSharp.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.MVC\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.MVC\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.MVC\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\user\Desktop\PB-201\API\MovieReservationApp\test\MovieReservationApp.MVC\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

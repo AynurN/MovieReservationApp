@@ -75,7 +75,7 @@ namespace MovieReservationApp.API.Controllers
             });
         }
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] MovieCreateDto dto)
+        public async Task<IActionResult> Create( MovieCreateDto dto)
         {
             try
             {
@@ -99,8 +99,8 @@ namespace MovieReservationApp.API.Controllers
             });
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update(int id, [FromForm] MovieUpdateDto dto)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id,  MovieUpdateDto dto)
         {
             try
             {
@@ -143,7 +143,7 @@ namespace MovieReservationApp.API.Controllers
 
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             try

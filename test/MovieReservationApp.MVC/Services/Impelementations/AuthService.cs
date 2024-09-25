@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using MovieReservationApp.MVC.ApiResponseMessages;
-using MovieReservationApp.MVC.Areas.ViewModels.UserVMs;
 using MovieReservationApp.MVC.Services.Intefaces;
 using MovieReservationApp.MVC.ViewModels.AuthVMs;
 using RestSharp;
@@ -22,7 +21,7 @@ namespace MovieReservationApp.MVC.Services.Impelementations
         }
         public async Task<LoginResponseVM> Login(UserLoginVM vm)
         {
-            var request = new RestRequest("/auth/login", Method.Post);
+            var request = new RestRequest("/auths/login", Method.Post);
             request.AddJsonBody(vm);
 
             var response = await restClient.ExecuteAsync<ApiResponseMessage<LoginResponseVM>>(request);

@@ -15,7 +15,7 @@ namespace MovieReservationApp.Core.Entities
         public int Duration { get; set; }
         public double Rating { get; set; }
         public DateTime ReleaseDate { get; set; }
-        public List<string>? Genres { get; set; }
+        public string Genres { get; set; }
         //relational
        public ICollection<ShowTime> ShowTimes { get; set; }
 

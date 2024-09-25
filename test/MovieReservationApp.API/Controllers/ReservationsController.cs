@@ -22,7 +22,7 @@ namespace MovieReservationApp.API.Controllers
 
         public async Task<IActionResult> GetAll()
         {
-            var data = await reservationService.GetByExpessionAsync(true,null,"User","ShowTime");
+            var data = await reservationService.GetByExpessionAsync(true, null, "User", "ShowTime");
             return Ok(new ApiResponse<ICollection<GetReservationDto>>
             {
                 StatusCode = StatusCodes.Status200OK,
@@ -73,12 +73,63 @@ namespace MovieReservationApp.API.Controllers
                 ErrorMessage = null
             });
         }
-        [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateReservationDto dto)
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Create( CreateReservationDto dto)
         {
             try
             {
                 await reservationService.CreateAsync(dto);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ApiResponse<CreateReservationDto>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
+            }
+
+            return Ok(new ApiResponse<CreateReservationDto>
+            {
+                Data = null,
+                StatusCode = StatusCodes.Status200OK,
+                ErrorMessage = null
+            });
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> ReserveSeat( int reservationId, string seatNo)
+        {
+            try
+            {
+                await reservationService.CreateSeatReservationAsync(reservationId, seatNo);
+            }
+            catch (EntityNotFoundException ex)
+            {
+                return BadRequest(new ApiResponse<CreateReservationDto>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
+            }
+            catch (SeatsAllFullException ex)
+            {
+                return BadRequest(new ApiResponse<CreateReservationDto>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
+            }
+            catch (SeatIsFullException ex)
+            {
+                return BadRequest(new ApiResponse<CreateReservationDto>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
             catch (Exception ex)
             {

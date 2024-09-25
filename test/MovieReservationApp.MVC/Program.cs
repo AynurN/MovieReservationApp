@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using MovieReservationApp.MVC.Filters;
 
 namespace MovieReservationApp.MVC
 {
@@ -12,6 +13,7 @@ namespace MovieReservationApp.MVC
             builder.Services.AddControllersWithViews();
             builder.Services.AddRegisterService();
             builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            builder.Services.AddScoped<TokenAuthorizationFilter>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

@@ -1,0 +1,54 @@
+﻿@model MovieCreateVM
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+
+            <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Basic form elements</h4>
+                        <p class="card-description">
+                            Basic form elements
+                        </p>
+                        <form class="forms-sample" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="Title" method="post">Title</label>
+                                <input asp-for="Title" class="form-control" placeholder="Title">
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Rating" method="post">Rating</label>
+                                <input asp-for="Rating" class="form-control" placeholder="Rating">
+                                <span asp-validation-for="Rating" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="Duration" method="post">Duration</label>
+                                <input asp-for="Duration" class="form-control" placeholder="Duration">
+                                <span asp-validation-for="Duration" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ReleaseDate" method="post"></label>
+                                <input asp-for="ReleaseDate" class="form-control" placeholder="ReleaseDate">
+                                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="ReleaseDate" method="post"></label>
+                                <input asp-for="Genres" class="form-control" placeholder="Genres">
+                                <span asp-validation-for="Genres" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="Desc" method="post"></label>
+                                <input asp-for="Desc" class="form-control" placeholder="Desc">
+                                <span asp-validation-for="Desc" class="text-danger"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary me-2">Create</button>
+                            <a asp-action="Index" class="btn btn-light">Cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>

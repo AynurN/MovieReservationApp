@@ -6,6 +6,7 @@ using MovieReservationApp.Business.Dtos.UserDtos;
 using MovieReservationApp.Business.Exceptions;
 using MovieReservationApp.Business.Services.Interfaces;
 using MovieReservationApp.Core.Entities;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MovieReservationApp.API.Controllers
 {
@@ -24,7 +25,7 @@ namespace MovieReservationApp.API.Controllers
             this.userManager = userManager;
         }
         [HttpPost("[action]")]
-        public async Task<IActionResult> Register([FromForm] UserRegisterDto dto)
+        public async Task<IActionResult> Register( UserRegisterDto dto)
         {
             try
             {
@@ -41,12 +42,12 @@ namespace MovieReservationApp.API.Controllers
             return Ok();
         }
         [HttpPost("[action]")]
-        public async Task<IActionResult> Login([FromForm] UserLoginDto dto)
+        public async Task<IActionResult> Login( UserLoginDto dto)
         {
-            TokenResponseDto token = null;
+            TokenResponseDto data = null;
             try
             {
-                token = await authService.Login(dto);
+                data = await authService.Login(dto);
             }
             catch (UnsuccesfulOperationException ex)
             {
@@ -56,7 +57,11 @@ namespace MovieReservationApp.API.Controllers
             {
                 return BadRequest(ex.Message);
             }
-            return Ok(token);
+            return Ok(new ApiResponse<TokenResponseDto>
+            {
+                Data = data,
+                StatusCode = StatusCodes.Status200OK
+            });
         }
     }
 }

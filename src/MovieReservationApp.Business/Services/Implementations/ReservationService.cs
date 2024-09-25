@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MovieReservationApp.Business.Dtos;
 using MovieReservationApp.Business.Dtos.ReservationDtos;
+using MovieReservationApp.Business.Dtos.SeatReservationDtos;
 using MovieReservationApp.Business.Exceptions;
 using MovieReservationApp.Business.Services.Interfaces;
 using MovieReservationApp.Core.Entities;
@@ -19,14 +20,17 @@ namespace MovieReservationApp.Business.Services.Implementations
     {
         private readonly IReservationRepository repo;
         private readonly IMapper mapper;
+        private readonly ISeatReservationService seatReservationService;
 
-        public ReservationService(IReservationRepository repo, IMapper mapper)
+        public ReservationService(IReservationRepository repo, IMapper mapper, ISeatReservationService seatReservationService)
         {
             this.repo = repo;
             this.mapper = mapper;
+            this.seatReservationService = seatReservationService;
         }
         public async Task CreateAsync(CreateReservationDto dTO)
         {
+
             Reservation res = mapper.Map<Reservation>(dTO);
             res.CreatedAt = DateTime.Now;
             res.ModifiedAt = DateTime.Now;
@@ -34,7 +38,11 @@ namespace MovieReservationApp.Business.Services.Implementations
             await repo.CommitAsync();
         }
 
-        public async Task DeleteAsync(int id)
+       
+    
+
+
+    public async Task DeleteAsync(int id)
         {
             if (id < 1) throw new InvalidIdException("Id is not valid");
             Reservation res = await repo.GetByIdAsync(id);
@@ -77,6 +85,27 @@ namespace MovieReservationApp.Business.Services.Implementations
             mapper.Map(dTO, res);
             res.ModifiedAt = DateTime.Now;
             await repo.CommitAsync();
+        }
+
+        public async Task CreateSeatReservationAsync(int reservationId, string seatNumber)
+        {
+            var reservation = await repo.GetByExpression(false, x => x.Id == reservationId, "ShowTime.Theater").FirstOrDefaultAsync();
+
+            if (reservation == null)
+            {
+                throw new EntityNotFoundException("Reservation not found");
+            }
+
+            if (reservation.ShowTime.FullSeats >= reservation.ShowTime.Theater.TotalSeats)
+                throw new SeatsAllFullException("All seats are full!");
+           
+
+            var seatReservation = new SeatReservationCreateDto(seatNumber, true, reservationId);
+            await seatReservationService.CreateAsync(seatReservation);
+            reservation.ShowTime.FullSeats++;
+
+
+
         }
     }
 }

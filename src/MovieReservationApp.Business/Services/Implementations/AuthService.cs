@@ -59,7 +59,7 @@ namespace MovieReservationApp.Business.Services.Implementations
 
             ];
             string key = configuration.GetSection("JWT:secretKey").Value;
-            DateTime expire = DateTime.UtcNow.AddMinutes(60);
+            DateTime expire = DateTime.UtcNow.AddHours(4);
             SymmetricSecurityKey symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
             SigningCredentials signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
             JwtSecurityToken jwtSecurityToken = new JwtSecurityToken(

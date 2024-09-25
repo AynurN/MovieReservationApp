@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MovieReservationApp.MVC.Areas.ViewModels.UserVMs;
 using MovieReservationApp.MVC.Services.Intefaces;
+using MovieReservationApp.MVC.ViewModels.AuthVMs;
 
 namespace MovieReservationApp.MVC.Areas.Admin.Controllers
 {

@@ -76,7 +76,7 @@ namespace MovieReservationApp.API.Controllers
             });
         }
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] ShowTimeCreateDto dto)
+        public async Task<IActionResult> Create( ShowTimeCreateDto dto)
         {
             try
             {
@@ -100,8 +100,8 @@ namespace MovieReservationApp.API.Controllers
             });
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update(int id, [FromBody] ShowTimeUpdateDto dto)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, ShowTimeUpdateDto dto)
         {
             try
             {
@@ -143,7 +143,7 @@ namespace MovieReservationApp.API.Controllers
             });
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             try

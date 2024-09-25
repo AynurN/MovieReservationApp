@@ -10,7 +10,7 @@ namespace MovieReservationApp.Core.Entities
     {
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
-
+        public int FullSeats { get; set; }
         //relational
         public int MovieId { get; set; }
         public Movie Movie { get; set; }
