@@ -3,12 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B905E13D-E03E-41D7-8B52-030C9E60BCF3}|test\\MovieReservationApp.API\\MovieReservationApp.API.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\test\\moviereservationapp.api\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B905E13D-E03E-41D7-8B52-030C9E60BCF3}|test\\MovieReservationApp.API\\MovieReservationApp.API.csproj|solutionrelative:test\\moviereservationapp.api\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\test\\moviereservationapp.mvc\\views\\home\\getseat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|solutionrelative:test\\moviereservationapp.mvc\\views\\home\\getseat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC2BC2B-1814-4FF5-A389-314C4FC895EE}|src\\MovieReservationApp.Core\\MovieReservationApp.Core.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\src\\moviereservationapp.core\\entities\\seatreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC2BC2B-1814-4FF5-A389-314C4FC895EE}|src\\MovieReservationApp.Core\\MovieReservationApp.Core.csproj|solutionrelative:src\\moviereservationapp.core\\entities\\seatreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA7383BE-856B-4B60-82A5-02F490B727F6}|src\\MovieReservationApp.Business\\MovieReservationApp.Business.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\src\\moviereservationapp.business\\dtos\\reservationdtos\\getreservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA7383BE-856B-4B60-82A5-02F490B727F6}|src\\MovieReservationApp.Business\\MovieReservationApp.Business.csproj|solutionrelative:src\\moviereservationapp.business\\dtos\\reservationdtos\\getreservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\test\\moviereservationapp.mvc\\viewmodels\\seatvms\\seatgetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|solutionrelative:test\\moviereservationapp.mvc\\viewmodels\\seatvms\\seatgetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\test\\moviereservationapp.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|solutionrelative:test\\moviereservationapp.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC2BC2B-1814-4FF5-A389-314C4FC895EE}|src\\MovieReservationApp.Core\\MovieReservationApp.Core.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\src\\moviereservationapp.core\\entities\\showtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC2BC2B-1814-4FF5-A389-314C4FC895EE}|src\\MovieReservationApp.Core\\MovieReservationApp.Core.csproj|solutionrelative:src\\moviereservationapp.core\\entities\\showtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\test\\moviereservationapp.mvc\\viewmodels\\reservationvms\\reservationgetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|solutionrelative:test\\moviereservationapp.mvc\\viewmodels\\reservationvms\\reservationgetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\test\\moviereservationapp.mvc\\viewmodels\\bookseatvms\\bookseatvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|solutionrelative:test\\moviereservationapp.mvc\\viewmodels\\bookseatvms\\bookseatvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\test\\moviereservationapp.mvc\\views\\home\\reserve.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|solutionrelative:test\\moviereservationapp.mvc\\views\\home\\reserve.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC2BC2B-1814-4FF5-A389-314C4FC895EE}|src\\MovieReservationApp.Core\\MovieReservationApp.Core.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\src\\moviereservationapp.core\\entities\\theater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC2BC2B-1814-4FF5-A389-314C4FC895EE}|src\\MovieReservationApp.Core\\MovieReservationApp.Core.csproj|solutionrelative:src\\moviereservationapp.core\\entities\\theater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DC2BC2B-1814-4FF5-A389-314C4FC895EE}|src\\MovieReservationApp.Core\\MovieReservationApp.Core.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\src\\moviereservationapp.core\\entities\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DC2BC2B-1814-4FF5-A389-314C4FC895EE}|src\\MovieReservationApp.Core\\MovieReservationApp.Core.csproj|solutionrelative:src\\moviereservationapp.core\\entities\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\test\\moviereservationapp.mvc\\viewmodels\\seatreservationvms\\seatreservationgetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|solutionrelative:test\\moviereservationapp.mvc\\viewmodels\\seatreservationvms\\seatreservationgetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\test\\moviereservationapp.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|solutionrelative:test\\moviereservationapp.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\moviereservationapp\\test\\moviereservationapp.mvc\\viewmodels\\seatreservationvms\\seatreservationcreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782AE865-975C-4A5C-AD2F-9467BC44ED71}|test\\MovieReservationApp.MVC\\MovieReservationApp.MVC.csproj|solutionrelative:test\\moviereservationapp.mvc\\viewmodels\\seatreservationvms\\seatreservationcreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +66,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReservationsController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.API\\Controllers\\ReservationsController.cs",
-              "RelativeDocumentMoniker": "test\\MovieReservationApp.API\\Controllers\\ReservationsController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.API\\Controllers\\ReservationsController.cs",
-              "RelativeToolTip": "test\\MovieReservationApp.API\\Controllers\\ReservationsController.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFAAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "SeatGetVM.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\ViewModels\\SeatVMs\\SeatGetVM.cs",
+              "RelativeDocumentMoniker": "test\\MovieReservationApp.MVC\\ViewModels\\SeatVMs\\SeatGetVM.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\ViewModels\\SeatVMs\\SeatGetVM.cs",
+              "RelativeToolTip": "test\\MovieReservationApp.MVC\\ViewModels\\SeatVMs\\SeatGetVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T19:42:33.775Z",
+              "WhenOpened": "2024-09-25T08:59:31.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShowTime.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\src\\MovieReservationApp.Core\\Entities\\ShowTime.cs",
+              "RelativeDocumentMoniker": "src\\MovieReservationApp.Core\\Entities\\ShowTime.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\src\\MovieReservationApp.Core\\Entities\\ShowTime.cs",
+              "RelativeToolTip": "src\\MovieReservationApp.Core\\Entities\\ShowTime.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T08:53:52.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SeatReservation.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\src\\MovieReservationApp.Core\\Entities\\SeatReservation.cs",
+              "RelativeDocumentMoniker": "src\\MovieReservationApp.Core\\Entities\\SeatReservation.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\src\\MovieReservationApp.Core\\Entities\\SeatReservation.cs",
+              "RelativeToolTip": "src\\MovieReservationApp.Core\\Entities\\SeatReservation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T08:53:50.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetReservationDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\src\\MovieReservationApp.Business\\Dtos\\ReservationDtos\\GetReservationDto.cs",
+              "RelativeDocumentMoniker": "src\\MovieReservationApp.Business\\Dtos\\ReservationDtos\\GetReservationDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\src\\MovieReservationApp.Business\\Dtos\\ReservationDtos\\GetReservationDto.cs",
+              "RelativeToolTip": "src\\MovieReservationApp.Business\\Dtos\\ReservationDtos\\GetReservationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAC/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T08:53:03.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReservationGetVM.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\ViewModels\\ReservationVMs\\ReservationGetVM.cs",
+              "RelativeDocumentMoniker": "test\\MovieReservationApp.MVC\\ViewModels\\ReservationVMs\\ReservationGetVM.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\ViewModels\\ReservationVMs\\ReservationGetVM.cs",
+              "RelativeToolTip": "test\\MovieReservationApp.MVC\\ViewModels\\ReservationVMs\\ReservationGetVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAC9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T08:52:38.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookSeatVM.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\ViewModels\\BookSeatVMs\\BookSeatVM.cs",
+              "RelativeDocumentMoniker": "test\\MovieReservationApp.MVC\\ViewModels\\BookSeatVMs\\BookSeatVM.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\ViewModels\\BookSeatVMs\\BookSeatVM.cs",
+              "RelativeToolTip": "test\\MovieReservationApp.MVC\\ViewModels\\BookSeatVMs\\BookSeatVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T08:47:18.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "test\\MovieReservationApp.MVC\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\Controllers\\HomeController.cs",
               "RelativeToolTip": "test\\MovieReservationApp.MVC\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAAFgAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T19:42:25.514Z",
+              "WhenOpened": "2024-09-25T08:37:01.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetSeat.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\Views\\Home\\GetSeat.cshtml",
+              "RelativeDocumentMoniker": "test\\MovieReservationApp.MVC\\Views\\Home\\GetSeat.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\Views\\Home\\GetSeat.cshtml",
+              "RelativeToolTip": "test\\MovieReservationApp.MVC\\Views\\Home\\GetSeat.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAawDYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T08:43:22.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Reserve.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\Views\\Home\\Reserve.cshtml",
+              "RelativeDocumentMoniker": "test\\MovieReservationApp.MVC\\Views\\Home\\Reserve.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\Views\\Home\\Reserve.cshtml",
+              "RelativeToolTip": "test\\MovieReservationApp.MVC\\Views\\Home\\Reserve.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T08:45:54.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Theater.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\src\\MovieReservationApp.Core\\Entities\\Theater.cs",
+              "RelativeDocumentMoniker": "src\\MovieReservationApp.Core\\Entities\\Theater.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\src\\MovieReservationApp.Core\\Entities\\Theater.cs",
+              "RelativeToolTip": "src\\MovieReservationApp.Core\\Entities\\Theater.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T08:49:43.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Seat.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\src\\MovieReservationApp.Core\\Entities\\Seat.cs",
+              "RelativeDocumentMoniker": "src\\MovieReservationApp.Core\\Entities\\Seat.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\src\\MovieReservationApp.Core\\Entities\\Seat.cs",
+              "RelativeToolTip": "src\\MovieReservationApp.Core\\Entities\\Seat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T08:49:40.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "test\\MovieReservationApp.MVC\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "test\\MovieReservationApp.MVC\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T08:43:34.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SeatReservationGetVM.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\ViewModels\\SeatReservationVMs\\SeatReservationGetVM.cs",
+              "RelativeDocumentMoniker": "test\\MovieReservationApp.MVC\\ViewModels\\SeatReservationVMs\\SeatReservationGetVM.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\ViewModels\\SeatReservationVMs\\SeatReservationGetVM.cs",
+              "RelativeToolTip": "test\\MovieReservationApp.MVC\\ViewModels\\SeatReservationVMs\\SeatReservationGetVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T08:36:40.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SeatReservationCreateVM.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\ViewModels\\SeatReservationVMs\\SeatReservationCreateVM.cs",
+              "RelativeDocumentMoniker": "test\\MovieReservationApp.MVC\\ViewModels\\SeatReservationVMs\\SeatReservationCreateVM.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieReservationApp\\test\\MovieReservationApp.MVC\\ViewModels\\SeatReservationVMs\\SeatReservationCreateVM.cs",
+              "RelativeToolTip": "test\\MovieReservationApp.MVC\\ViewModels\\SeatReservationVMs\\SeatReservationCreateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T08:36:38.592Z",
               "EditorCaption": ""
             }
           ]

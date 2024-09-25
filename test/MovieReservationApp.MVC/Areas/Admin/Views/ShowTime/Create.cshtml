@@ -1,0 +1,44 @@
+﻿@model ShowTimeCreateVM
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+
+            <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Basic form elements</h4>
+                        <p class="card-description">
+                            Basic form elements
+                        </p>
+                        <form class="forms-sample" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="MovieId" method="post">Title</label>
+                                <input asp-for="MovieId" class="form-control" placeholder="MovieId">
+                                <span asp-validation-for="MovieId" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="TheaterId" method="post">Rating</label>
+                                <input asp-for="TheaterId" class="form-control" placeholder="TheaterId">
+                                <span asp-validation-for="TheaterId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="StartTime" method="post">Duration</label>
+                                <input asp-for="StartTime" class="form-control" placeholder="StartTime">
+                                <span asp-validation-for="StartTime" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="EndTime" method="post"></label>
+                                <input asp-for="EndTime" class="form-control" placeholder="EndTime">
+                                <span asp-validation-for="EndTime" class="text-danger"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary me-2">Create</button>
+                            <a asp-action="Index" class="btn btn-light">Cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>

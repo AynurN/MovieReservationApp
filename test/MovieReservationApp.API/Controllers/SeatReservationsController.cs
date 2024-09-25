@@ -23,7 +23,7 @@ namespace MovieReservationApp.API.Controllers
 
         public async Task<IActionResult> GetAll()
         {
-            var data = await seatReservationService.GetByExpessionAsync(true);
+            var data = await seatReservationService.GetByExpessionAsync(true,null,"Seat","Reservation");
             return Ok(new ApiResponse<ICollection<SeatReservationGetDto>>
             {
                 StatusCode = StatusCodes.Status200OK,
@@ -38,13 +38,13 @@ namespace MovieReservationApp.API.Controllers
             SeatReservationGetDto dto = null;
             try
             {
-                dto = await seatReservationService.GetByIdAsync(id);
+                dto = await seatReservationService.GetOneByExpressionAsync(true, null, "Seat", "Reservation");
             }
             catch (InvalidIdException ex)
             {
                 return BadRequest(new ApiResponse<SeatReservationGetDto>
                 {
-                    StatusCode = StatusCodes.Status400BadRequest, //400
+                    StatusCode = StatusCodes.Status400BadRequest, 
                     ErrorMessage = "Id is invalid!",
                     Data = null
                 });
@@ -75,7 +75,7 @@ namespace MovieReservationApp.API.Controllers
             });
         }
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] SeatReservationCreateDto dto)
+        public async Task<IActionResult> Create( SeatReservationCreateDto dto)
         {
             try
             {
@@ -99,8 +99,8 @@ namespace MovieReservationApp.API.Controllers
             });
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update(int id, [FromForm] SeatReservationUpdateDto dto)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id,  SeatReservationUpdateDto dto)
         {
             try
             {
@@ -142,7 +142,7 @@ namespace MovieReservationApp.API.Controllers
             });
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             try

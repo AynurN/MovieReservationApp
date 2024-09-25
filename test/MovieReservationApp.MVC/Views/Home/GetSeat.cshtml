@@ -1,5 +1,6 @@
 ﻿
-@model List<SeatReservationGetVM>
+
+@model List<SeatGetVM>
 @{
     int num = 0;
 }
@@ -29,7 +30,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach (SeatReservationGetVM st in Model)
+                                    @foreach (SeatGetVM st in Model)
                                     {
 
                                         num++;
@@ -41,7 +42,7 @@
                                             <td>
                                                 <p style="color:black">@st.SeatNumber</p>
                                             </td>
-                                            @if (st.IsBooked == false)
+                                           @*  @if (st.== false)
                                             {
                                                 <td>
                                                     <a asp-action="book" asp-route-id="@st.Id" class="btn btn-warning">Book </a>
@@ -51,7 +52,7 @@
                                             else
                                             {
                                                 <td class="text-danger"> Booked</td>
-                                            }
+                                            } *@
 
 
                                         </tr>

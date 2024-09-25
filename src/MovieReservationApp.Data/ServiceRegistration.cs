@@ -20,6 +20,7 @@ namespace MovieReservationApp.Data
             services.AddScoped<ISeatReservationRepository, SeatReservationRepository>();
             services.AddScoped<IReservationRepository, ReservationRepository>();
             services.AddScoped<IShowTimeRepository, ShowTimeRepository>();
+            services.AddScoped<ISeatRepository, SeatRepository>();
             services.AddDbContext<AppDbContext>(opt =>
          opt.UseSqlServer(connectionString)
          );

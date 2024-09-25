@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace MovieReservationApp.Business.Dtos.ReservationDtos
 {
-    public record GetReservationDto(int Id, DateTime CreatedAt, DateTime ModifiedAt, bool IsDeleted,  string UserUserName, DateTime ShowTimeStartTime, DateTime ShowTimeEndTime);
+    public record GetReservationDto(int Id, DateTime CreatedAt, DateTime ModifiedAt, bool IsDeleted,  string UserUserName, DateTime ShowTimeStartTime, DateTime ShowTimeEndTime, int ShowTimeId);
 
 }

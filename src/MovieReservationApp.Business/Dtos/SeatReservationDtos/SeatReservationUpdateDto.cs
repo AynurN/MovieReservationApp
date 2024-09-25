@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace MovieReservationApp.Business.Dtos.SeatReservationDtos
 {
-    public record SeatReservationUpdateDto(string SeatNumber, bool IsBooked, int ReservationId);
+    public record SeatReservationUpdateDto(int SeatId, bool IsBooked, int? ReservationId);
     
 }

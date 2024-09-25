@@ -24,6 +24,7 @@ namespace MovieReservationApp.API.Controllers
             this.roleManager = roleManager;
             this.userManager = userManager;
         }
+
         [HttpPost("[action]")]
         public async Task<IActionResult> Register( UserRegisterDto dto)
         {

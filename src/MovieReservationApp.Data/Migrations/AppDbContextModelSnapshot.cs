@@ -305,6 +305,37 @@ namespace MovieReservationApp.Data.Migrations
                     b.ToTable("Reservations");
                 });
 
+            modelBuilder.Entity("MovieReservationApp.Core.Entities.Seat", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("SeatNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TheaterId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TheaterId");
+
+                    b.ToTable("Seats");
+                });
+
             modelBuilder.Entity("MovieReservationApp.Core.Entities.SeatReservation", b =>
                 {
                     b.Property<int>("Id")
@@ -328,13 +359,14 @@ namespace MovieReservationApp.Data.Migrations
                     b.Property<int>("ReservationId")
                         .HasColumnType("int");
 
-                    b.Property<string>("SeatNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("SeatId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ReservationId");
+
+                    b.HasIndex("SeatId");
 
                     b.ToTable("SeatReservations");
                 });
@@ -494,6 +526,17 @@ namespace MovieReservationApp.Data.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("MovieReservationApp.Core.Entities.Seat", b =>
+                {
+                    b.HasOne("MovieReservationApp.Core.Entities.Theater", "Theater")
+                        .WithMany("Seats")
+                        .HasForeignKey("TheaterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Theater");
+                });
+
             modelBuilder.Entity("MovieReservationApp.Core.Entities.SeatReservation", b =>
                 {
                     b.HasOne("MovieReservationApp.Core.Entities.Reservation", "Reservation")
@@ -502,7 +545,15 @@ namespace MovieReservationApp.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("MovieReservationApp.Core.Entities.Seat", "Seat")
+                        .WithMany("SeatReservations")
+                        .HasForeignKey("SeatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Reservation");
+
+                    b.Navigation("Seat");
                 });
 
             modelBuilder.Entity("MovieReservationApp.Core.Entities.ShowTime", b =>
@@ -534,6 +585,11 @@ namespace MovieReservationApp.Data.Migrations
                     b.Navigation("SeatReservations");
                 });
 
+            modelBuilder.Entity("MovieReservationApp.Core.Entities.Seat", b =>
+                {
+                    b.Navigation("SeatReservations");
+                });
+
             modelBuilder.Entity("MovieReservationApp.Core.Entities.ShowTime", b =>
                 {
                     b.Navigation("Reservations");
@@ -541,6 +597,8 @@ namespace MovieReservationApp.Data.Migrations
 
             modelBuilder.Entity("MovieReservationApp.Core.Entities.Theater", b =>
                 {
+                    b.Navigation("Seats");
+
                     b.Navigation("ShowTimes");
                 });
 

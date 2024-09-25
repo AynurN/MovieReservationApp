@@ -15,5 +15,6 @@ namespace MovieReservationApp.Core.Entities
 
         //relational
         public ICollection<ShowTime> ShowTimes { get; set; }
+        public ICollection<Seat> Seats { get; set; }
     }
 }

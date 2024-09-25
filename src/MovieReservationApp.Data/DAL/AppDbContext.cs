@@ -17,6 +17,7 @@ namespace MovieReservationApp.Data.DAL
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<SeatReservation> SeatReservations { get; set; }
         public DbSet<ShowTime> ShowTimes { get; set; }
+        public DbSet<Seat> Seats { get; set; }
         public DbSet<User> Users { get; set; }
     }
 }

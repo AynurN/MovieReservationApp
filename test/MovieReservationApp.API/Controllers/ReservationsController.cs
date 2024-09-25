@@ -97,57 +97,57 @@ namespace MovieReservationApp.API.Controllers
                 ErrorMessage = null
             });
         }
-        [HttpPost("[action]")]
-        public async Task<IActionResult> ReserveSeat( int reservationId, string seatNo)
-        {
-            try
-            {
-                await reservationService.CreateSeatReservationAsync(reservationId, seatNo);
-            }
-            catch (EntityNotFoundException ex)
-            {
-                return BadRequest(new ApiResponse<CreateReservationDto>
-                {
-                    StatusCode = StatusCodes.Status400BadRequest,
-                    ErrorMessage = ex.Message,
-                    Data = null
-                });
-            }
-            catch (SeatsAllFullException ex)
-            {
-                return BadRequest(new ApiResponse<CreateReservationDto>
-                {
-                    StatusCode = StatusCodes.Status400BadRequest,
-                    ErrorMessage = ex.Message,
-                    Data = null
-                });
-            }
-            catch (SeatIsFullException ex)
-            {
-                return BadRequest(new ApiResponse<CreateReservationDto>
-                {
-                    StatusCode = StatusCodes.Status400BadRequest,
-                    ErrorMessage = ex.Message,
-                    Data = null
-                });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new ApiResponse<CreateReservationDto>
-                {
-                    StatusCode = StatusCodes.Status400BadRequest,
-                    ErrorMessage = ex.Message,
-                    Data = null
-                });
-            }
+        //[HttpPost("[action]")]
+        //public async Task<IActionResult> ReserveSeat( int reservationId, string seatNo)
+        //{
+        //    try
+        //    {
+        //        await reservationService.CreateSeatReservationAsync(reservationId, seatNo);
+        //    }
+        //    catch (EntityNotFoundException ex)
+        //    {
+        //        return BadRequest(new ApiResponse<CreateReservationDto>
+        //        {
+        //            StatusCode = StatusCodes.Status400BadRequest,
+        //            ErrorMessage = ex.Message,
+        //            Data = null
+        //        });
+        //    }
+        //    catch (SeatsAllFullException ex)
+        //    {
+        //        return BadRequest(new ApiResponse<CreateReservationDto>
+        //        {
+        //            StatusCode = StatusCodes.Status400BadRequest,
+        //            ErrorMessage = ex.Message,
+        //            Data = null
+        //        });
+        //    }
+        //    catch (SeatIsFullException ex)
+        //    {
+        //        return BadRequest(new ApiResponse<CreateReservationDto>
+        //        {
+        //            StatusCode = StatusCodes.Status400BadRequest,
+        //            ErrorMessage = ex.Message,
+        //            Data = null
+        //        });
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest(new ApiResponse<CreateReservationDto>
+        //        {
+        //            StatusCode = StatusCodes.Status400BadRequest,
+        //            ErrorMessage = ex.Message,
+        //            Data = null
+        //        });
+        //    }
 
-            return Ok(new ApiResponse<CreateReservationDto>
-            {
-                Data = null,
-                StatusCode = StatusCodes.Status200OK,
-                ErrorMessage = null
-            });
-        }
+        //    return Ok(new ApiResponse<CreateReservationDto>
+        //    {
+        //        Data = null,
+        //        StatusCode = StatusCodes.Status200OK,
+        //        ErrorMessage = null
+        //    });
+        //}
 
         [HttpPut]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateReservationDto dto)

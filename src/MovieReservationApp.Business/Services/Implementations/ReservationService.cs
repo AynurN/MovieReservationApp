@@ -87,25 +87,25 @@ namespace MovieReservationApp.Business.Services.Implementations
             await repo.CommitAsync();
         }
 
-        public async Task CreateSeatReservationAsync(int reservationId, string seatNumber)
-        {
-            var reservation = await repo.GetByExpression(false, x => x.Id == reservationId, "ShowTime.Theater").FirstOrDefaultAsync();
+        //public async Task CreateSeatReservationAsync(int reservationId, string seatNumber)
+        //{
+        //    var reservation = await repo.GetByExpression(false, x => x.Id == reservationId, "ShowTime.Theater").FirstOrDefaultAsync();
 
-            if (reservation == null)
-            {
-                throw new EntityNotFoundException("Reservation not found");
-            }
+        //    if (reservation == null)
+        //    {
+        //        throw new EntityNotFoundException("Reservation not found");
+        //    }
 
-            if (reservation.ShowTime.FullSeats >= reservation.ShowTime.Theater.TotalSeats)
-                throw new SeatsAllFullException("All seats are full!");
+        //    if (reservation.ShowTime.FullSeats >= reservation.ShowTime.Theater.TotalSeats)
+        //        throw new SeatsAllFullException("All seats are full!");
            
 
-            var seatReservation = new SeatReservationCreateDto(seatNumber, true, reservationId);
-            await seatReservationService.CreateAsync(seatReservation);
-            reservation.ShowTime.FullSeats++;
+        //    var seatReservation = new SeatReservationCreateDto(seatNumber, true, reservationId);
+        //    await seatReservationService.CreateAsync(seatReservation);
+        //    reservation.ShowTime.FullSeats++;
 
 
 
-        }
+        //}
     }
 }

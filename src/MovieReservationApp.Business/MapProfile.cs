@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MovieReservationApp.Business.Dtos;
 using MovieReservationApp.Business.Dtos.ReservationDtos;
+using MovieReservationApp.Business.Dtos.SeatDtos;
 using MovieReservationApp.Business.Dtos.SeatReservationDtos;
 using MovieReservationApp.Business.Dtos.ShowTimeDtos;
 using MovieReservationApp.Business.Dtos.TheaterDtos;
@@ -41,6 +42,10 @@ namespace MovieReservationApp.Business
             CreateMap<SeatReservation, SeatReservationCreateDto>().ReverseMap();
             CreateMap<SeatReservation, SeatReservationGetDto>().ReverseMap();
             CreateMap<SeatReservation, SeatReservationUpdateDto>().ReverseMap();
+
+            CreateMap<Seat, SeatUpdateDto>().ReverseMap();
+            CreateMap<Seat, SeatGetDto>().ReverseMap();
+            CreateMap<Seat, SeatCreateDto>().ReverseMap();
 
 
 

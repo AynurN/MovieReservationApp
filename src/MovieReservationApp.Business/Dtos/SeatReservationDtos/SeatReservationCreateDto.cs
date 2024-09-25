@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace MovieReservationApp.Business.Dtos.SeatReservationDtos
 {
-    public record SeatReservationCreateDto(string SeatNumber, bool IsBooked, int ReservationId);
+    public record SeatReservationCreateDto(int SeatId, bool IsBooked, int ReservationId);
    
 }

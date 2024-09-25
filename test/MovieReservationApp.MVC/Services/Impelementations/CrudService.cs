@@ -33,7 +33,12 @@ namespace MovieReservationApp.MVC.Services.Impelementations
             if (!response.IsSuccessful) 
                 throw new Exception();
         }
-		
+        //public Task ReserveSeat<T>(string endpoint, int reservationId, string seatNo)
+        //{
+
+        //}
+
+
 		public async Task Delete<T>(string endpoint, int id)
         {
             var request = new RestRequest(endpoint, Method.Delete);

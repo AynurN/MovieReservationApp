@@ -19,6 +19,7 @@ namespace MovieReservationApp.Business
             services.AddScoped<IShowTimeService, ShowTimeService>();
             services.AddScoped<IReservationService, ReservationService>();
             services.AddScoped<ISeatReservationService, SeatReservationService>();
+            services.AddScoped<ISeatService, SeatService>();
         }
     }
 }

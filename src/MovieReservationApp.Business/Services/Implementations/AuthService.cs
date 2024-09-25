@@ -34,6 +34,8 @@ namespace MovieReservationApp.Business.Services.Implementations
             this.signInManager = signInManager;
             this.configuration = configuration;
         }
+
+
         public async Task<TokenResponseDto> Login(UserLoginDto dto)
         {
             User appUser = null;

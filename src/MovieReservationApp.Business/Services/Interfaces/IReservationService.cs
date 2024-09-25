@@ -17,7 +17,7 @@ namespace MovieReservationApp.Business.Services.Interfaces
         Task DeleteAsync(int id);
         Task<ICollection<GetReservationDto>> GetByExpessionAsync(bool AsNoTracking = false, Expression<Func<Reservation, bool>>? expression = null, params string[] includes);
         Task<GetReservationDto> GetByIdAsync(int id);
-        Task CreateSeatReservationAsync(int reservationId, string seatNumber);
+        //Task CreateSeatReservationAsync(int reservationId, string seatNumber);
 
         Task<GetReservationDto> GetOneByExpressionAsync(bool AsNoTracking = false, Expression<Func<Reservation, bool>>? expression = null, params string[] includes);
     }

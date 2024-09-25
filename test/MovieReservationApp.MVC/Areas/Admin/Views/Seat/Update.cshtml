@@ -1,0 +1,34 @@
+﻿@model SeatUpdateVM
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+
+            <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Basic form elements</h4>
+                        <p class="card-description">
+                            Basic form elements
+                        </p>
+                        <form class="forms-sample" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="SeatNumber" method="post">Title</label>
+                                <input asp-for="SeatNumber" class="form-control" placeholder="SeatNumber">
+                                <span asp-validation-for="SeatNumber" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="TheaterId" method="post">Rating</label>
+                                <input asp-for="TheaterId" class="form-control" placeholder="TheaterId">
+                                <span asp-validation-for="TheaterId" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary me-2">Update</button>
+                            <a asp-action="Index" class="btn btn-light">Cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
